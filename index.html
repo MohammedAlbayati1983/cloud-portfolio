@@ -1,12 +1,202 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mohammed Al-Bayati | Cloud Engineer & AWS Solutions Architect</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23ff9900'><path d='M4.406 3.342A5.53 5.53 0 0 1 8 2c2.69 0 4.923 2 5.166 4.579C14.758 6.804 16 8.137 16 9.773 16 11.569 14.502 13 12.687 13H3.781C1.708 13 0 11.366 0 9.318c0-1.763 1.266-3.223 2.942-3.593.143-.863.698-1.723 1.464-2.383'/></svg>">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+
+  <!-- Header & Navigation -->
+  <header class="site-header">
+    <div class="container header-content">
+      <a href="#" class="logo">
+  <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="#ff9900" viewBox="0 0 16 16" aria-hidden="true">
+    <path d="M4.406 3.342A5.53 5.53 0 0 1 8 2c2.69 0 4.923 2 5.166 4.579C14.758 6.804 16 8.137 16 9.773 16 11.569 14.502 13 12.687 13H3.781C1.708 13 0 11.366 0 9.318c0-1.763 1.266-3.223 2.942-3.593.143-.863.698-1.723 1.464-2.383"/>
+  </svg>
+  MOHAMMED <span>AL-BAYATI</span>
+</a>
+      <nav class="main-nav">
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#certification">Certification</a></li>
+          <li><a href="#projects">AWS Projects</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="about" class="hero">
+    <div class="container hero-content">
+      <p class="badge">☁️ AWS Certified Solutions Architect – Associate</p>
+      <h1>Cloud Engineer &amp; Infrastructure Enthusiast</h1>
+      <p class="hero-bio">
+        Computer Science graduate based in Hagen, Germany, with strong hands-on expertise in AWS Cloud Infrastructure, Networking, Security, and Monitoring. Currently advancing my skills in Cloud Automation, Infrastructure as Code (Terraform), and AI at DCI Digital Career Institute.
+      </p>
+      <div class="hero-actions">
+        <a href="#projects" class="btn btn-primary">Explore AWS Projects</a>
+        <a href="https://github.com/MohammedAlbayati1983" target="_blank" class="btn btn-outline">GitHub Profile</a>
+        <a href="https://www.linkedin.com/in/mohammed-al-bayati-1983" target="_blank" class="btn btn-outline">LinkedIn</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Certification & Learning Path -->
+  <section id="certification" class="section">
+    <div class="container">
+      <h2 class="section-title">Certification &amp; Continuous Learning</h2>
+      <div class="cards-row">
+        
+        <article class="card highlight-card">
+          <div class="card-header">
+            <span class="tag tag-aws">Verified Certification</span>
+            <span class="date">Issued: 26.08.2026</span>
+          </div>
+          <h3>AWS Certified Solutions Architect – Associate</h3>
+          <p>
+            Validated expertise in designing resilient, high-performing, secure, and cost-optimized architectures on Amazon Web Services.
+          </p>
+          <!-- certificate verification link (Credly)# -->
+          <a href="https://www.credly.com/badges/d4d740af-5750-4c81-b3ac-ac3840235652/public_url" target="_blank" class="card-link">Verify AWS Credential →</a>
+        </article>
+
+        <article class="card">
+          <div class="card-header">
+            <span class="tag tag-learning">In Progress (10/2026 – 01/2028)</span>
+          </div>
+          <h3>Cloud &amp; AI Engineering Training – DCI</h3>
+          <p>
+            Intensive further education at DCI Digital Career Institute covering Linux System Administration, Git/GitHub, Web Fundamentals, Cloud Automation, and Terraform (IaC).
+          </p>
+          <span class="status-text">🎯 Goal: Junior Cloud Engineer / Cloud Trainee</span>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Practical AWS Hands-On Projects -->
+  <section id="projects" class="section section-alt">
+    <div class="container">
+      <h2 class="section-title">Practical AWS Hands-On Projects</h2>
+      <p class="section-subtitle">Four production-oriented cloud architectures built and tested from scratch.</p>
+      
+      <div class="projects-grid">
+
+        <!-- Project 1 -->
+        <article class="card project-card">
+          <h3>1. AWS Multi-Tier Web Application</h3>
+          <p class="project-focus">High Availability &amp; Asynchronous Decoupling</p>
+          <p>
+            Built a resilient 2-tier architecture inside a custom VPC with Public/Private Subnets, Application Load Balancer (ALB), EC2 Auto Scaling, RDS PostgreSQL, and SQS queues.
+          </p>
+          <div class="tech-tags">
+            <span>VPC</span><span>ALB</span><span>Auto Scaling</span><span>RDS</span><span>SQS</span>
+          </div>
+          <!-- Link Project 1 on GitHub # -->
+          <a href="https://github.com/MohammedAlbayati1983/aws-multi-tier-web-app.git" target="_blank" class="card-link">View Code on GitHub →</a>
+        </article>
+
+        <!-- Project 2 -->
+        <article class="card project-card">
+          <h3>2. Serverless Web Application &amp; Security</h3>
+          <p class="project-focus">Event-Driven Architecture &amp; Web Protection</p>
+          <p>
+            Developed a fully serverless, event-driven application powered by Amazon API Gateway, AWS Lambda, and DynamoDB, protected against web exploits with AWS WAF.
+          </p>
+          <div class="tech-tags">
+            <span>API Gateway</span><span>Lambda</span><span>DynamoDB</span><span>AWS WAF</span>
+          </div>
+          <!-- Link Project 2 on GitHub# -->
+          <a href="https://github.com/MohammedAlbayati1983/aws-serverless-web-app.git" target="_blank" class="card-link">View Code on GitHub →</a>
+        </article>
+
+        <!-- Project 3 -->
+        <article class="card project-card">
+          <h3>3. Automated Incident Response &amp; DDoS Protection</h3>
+          <p class="project-focus">Security Orchestration &amp; Automated Remediation (SOAR)</p>
+          <p>
+            Implemented automated security workflows to detect and mitigate DDoS attacks using AWS WAF, Amazon CloudFront, CloudWatch Alarms, and automated Lambda triggers.
+          </p>
+          <div class="tech-tags">
+            <span>AWS WAF</span><span>CloudFront</span><span>CloudWatch</span><span>Lambda</span>
+          </div>
+          <!-- Link Project 3 on GitHub# -->
+          <a href="https://github.com/MohammedAlbayati1983/aws-secure-webapp-waf-automation.git" target="_blank" class="card-link">View Code on GitHub →</a>
+        </article>
+
+        <!-- Project 4 -->
+        <article class="card project-card">
+          <h3>4. VPC Flow Logs Analytics Pipeline</h3>
+          <p class="project-focus">Real-Time Log Streaming &amp; Security Querying</p>
+          <p>
+            Engineered a real-time network log analytics pipeline using Amazon Kinesis Data Firehose, AWS Lambda for data transformation, and Amazon Athena for SQL security queries.
+          </p>
+          <div class="tech-tags">
+            <span>VPC Flow Logs</span><span>Kinesis Firehose</span><span>Lambda</span><span>Athena</span>
+          </div>
+          <!-- Link Project 4 on GitHubكان # -->
+          <a href="https://github.com/MohammedAlbayati1983/aws-vpc-flowlogs-athena.git" target="_blank" class="card-link">View Code on GitHub →</a>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Technical Skills & Background -->
+  <section id="skills" class="section">
+    <div class="container">
+      <h2 class="section-title">Technical Skills &amp; Experience</h2>
+      <div class="cards-row">
+        
+        <article class="card">
+          <h3>☁️ Cloud Computing (AWS)</h3>
+          <p>
+            EC2, Auto Scaling, Lambda, ECS (Fargate &amp; EC2), Docker, ECR, VPC, Subnets, NAT/Internet Gateway, Transit Gateway, ALB/NLB, S3, EBS, EFS, RDS, DynamoDB, IAM, KMS, Security Groups, NACLs, CloudWatch, CloudTrail, Route 53.
+          </p>
+        </article>
+
+        <article class="card">
+          <h3>🌐 Networking &amp; IT Support</h3>
+          <p>
+            B.Sc. in Computer Science (Baghdad) &amp; hands-on experience in TCP/IP, IPv4, Subnetting, Router &amp; Switch Configuration, Ethernet Cabling, Server Connectivity, and Basics of Windows Administration.
+          </p>
+        </article>
+
+        <article class="card">
+          <h3>💻 Programming &amp; DevOps Tools</h3>
+          <p>
+            Basics of Python, C/C++, Java, Kotlin, Git &amp; GitHub (Branching, SSH Workflows), and Basics of Linux/WSL, HTML5 &amp; CSS3, and Terraform (currently studying).
+          </p>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer & Contact -->
+  <footer id="contact" class="site-footer">
+    <div class="container footer-content">
+      <div>
+        <h3>Let's Connect</h3>
+        <p>📍 Hagen (58095), North Rhine-Westphalia, Germany</p>
+        <p>🗣️ Languages: Arabic (Native) | German (B2) | English (B2)</p>
+      </div>
+      <div class="footer-links">
+        <a href="mailto:mohammed.albayati1983@gmail.com">📧 mohammed.albayati1983@gmail.com</a>
+        <a href="https://github.com/MohammedAlbayati1983" target="_blank">🐙 github.com/MohammedAlbayati1983</a>
+        <a href="https://www.linkedin.com/in/mohammed-al-bayati-1983" target="_blank">💼 linkedin.com/in/mohammed-al-bayati-1983</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 Mohammed Al-Bayati — Built with Semantic HTML5 &amp; CSS Flexbox</p>
+    </div>
+  </footer>
+
 </body>
 </html>
