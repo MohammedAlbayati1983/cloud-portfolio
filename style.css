@@ -116,18 +116,24 @@ body {
 .hero-actions {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 720px;
+  margin: 12px auto 0;
   gap: 14px;
-  margin-top: 8px;
 }
 
 /* Buttons */
 .btn {
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
   padding: 12px 24px;
   border-radius: 8px;
   font-weight: 700;
   text-decoration: none;
-  transition: transform 0.2s, background-color 0.2s;
+  transition: transform 0.2s, background-color 0.2s, border-color 0.2s, color 0.2s;
 }
 
 .btn:hover {
@@ -335,9 +341,24 @@ body {
 }
 
 .footer-links a {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  line-height: 1.2;
   color: #38bdf8;
   text-decoration: none;
   font-weight: 600;
+  transition: color 0.2s;
+}
+
+.footer-links a svg {
+  display: block;
+  flex-shrink: 0;
+}
+
+.footer-links a:hover {
+  color: #ff9900;
+  text-decoration: underline;
 }
 
 .footer-links a:hover {
