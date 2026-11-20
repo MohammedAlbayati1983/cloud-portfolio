@@ -115,13 +115,19 @@ body {
 
 .hero-actions {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  flex-direction: column;
   align-items: center;
+  justify-content: center;
   width: 100%;
   max-width: 720px;
   margin: 12px auto 0;
   gap: 14px;
+}
+
+.hero-actions .btn {
+  width: 100%;
+  max-width: 280px;
+  justify-content: center;
 }
 
 /* Buttons */
@@ -378,6 +384,18 @@ body {
   .header-content {
     flex-direction: row;
     justify-content: space-between;
+  }
+
+  .hero-actions {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .hero-actions .btn {
+    width: auto;
+    max-width: none;
   }
 
   .footer-content {
